@@ -2,6 +2,7 @@ package garcia.julio.calculadora
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
@@ -13,6 +14,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
 
         btn_0.setOnClickListener{
             type(btn_0)
@@ -80,6 +83,11 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+    fun bulio(v: View){
+        Toast.makeText(applicationContext, "O////O S-Sempai", Toast.LENGTH_LONG).show()
+        Toast.makeText(applicationContext, "Esta app fue hecha por bulio, si está en otro repo, la robaron..", Toast.LENGTH_LONG).show()
+    }
+
     fun type(btn: Button){
         tv_input.append(btn.text)
     }
@@ -96,6 +104,7 @@ class MainActivity : AppCompatActivity() {
             tv_op.setText(btn.text)
         }catch (e: Exception){
             Toast.makeText(applicationContext, "No hay números!", Toast.LENGTH_LONG).show()
+
         }
 
         tv_resultado.setText(tv_input.text)
@@ -103,8 +112,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun equal(){
-        eval(ant, tv_input.text.toString().toDouble(), tv_op.text.toString().get(0))
-        tv_input.setText("")
+        try{
+            eval(ant, tv_input.text.toString().toDouble(), tv_op.text.toString().get(0))
+            tv_input.setText("")
+        } catch (e: Exception){
+            Toast.makeText(applicationContext, "No hay números!", Toast.LENGTH_LONG).show()
+
+        }
+
     }
 
     fun eval(num1: Double, num2: Double, op: Char){
@@ -138,7 +153,7 @@ class MainActivity : AppCompatActivity() {
                     tv_resultado.setText("")
                 }
             }
-            else -> Toast.makeText(applicationContext, "WTF?", Toast.LENGTH_LONG).show()
+            else -> Toast.makeText(applicationContext, "No especificaste un operador", Toast.LENGTH_LONG).show()
         }
     }
 }

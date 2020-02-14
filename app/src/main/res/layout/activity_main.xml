@@ -15,7 +15,9 @@
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="bulio"
+        android:clickable="true"/>
 
     <TextView
         android:id="@+id/tv_resultado"
@@ -48,6 +50,8 @@
         android:layout_marginLeft="4dp"
         android:layout_marginTop="272dp"
         android:text="7"
+        app:layout_constraintEnd_toStartOf="@+id/btn_8"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -59,6 +63,8 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="272dp"
         android:text="8"
+        app:layout_constraintEnd_toStartOf="@+id/btn_9"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btn_7"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -70,6 +76,8 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="272dp"
         android:text="9"
+        app:layout_constraintEnd_toStartOf="@+id/btn_sum"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btn_8"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -82,7 +90,7 @@
         android:layout_marginTop="272dp"
         android:text="+"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btn_9"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -94,6 +102,8 @@
         android:layout_marginLeft="4dp"
         android:layout_marginTop="20dp"
         android:text="4"
+        app:layout_constraintEnd_toStartOf="@+id/btn_5"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_7" />
 
@@ -105,6 +115,8 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="20dp"
         android:text="5"
+        app:layout_constraintEnd_toStartOf="@+id/btn_6"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btn_4"
         app:layout_constraintTop_toBottomOf="@+id/btn_8" />
 
@@ -116,6 +128,8 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="20dp"
         android:text="6"
+        app:layout_constraintEnd_toStartOf="@+id/btn_res"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btn_5"
         app:layout_constraintTop_toBottomOf="@+id/btn_9" />
 
@@ -127,6 +141,8 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="20dp"
         android:text="-"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btn_6"
         app:layout_constraintTop_toBottomOf="@+id/btn_sum" />
 
@@ -138,6 +154,8 @@
         android:layout_marginLeft="4dp"
         android:layout_marginTop="20dp"
         android:text="1"
+        app:layout_constraintEnd_toStartOf="@+id/btn_2"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_4" />
 
@@ -149,6 +167,8 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="20dp"
         android:text="2"
+        app:layout_constraintEnd_toStartOf="@+id/btn_3"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btn_1"
         app:layout_constraintTop_toBottomOf="@+id/btn_5" />
 
@@ -160,6 +180,8 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="20dp"
         android:text="3"
+        app:layout_constraintEnd_toStartOf="@+id/btn_mul"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btn_2"
         app:layout_constraintTop_toBottomOf="@+id/btn_6" />
 
@@ -171,6 +193,8 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="20dp"
         android:text="*"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btn_3"
         app:layout_constraintTop_toBottomOf="@+id/btn_res" />
 
@@ -182,6 +206,8 @@
         android:layout_marginLeft="4dp"
         android:layout_marginTop="20dp"
         android:text="0"
+        app:layout_constraintEnd_toStartOf="@+id/btn_eq"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_1" />
 
@@ -193,6 +219,8 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="20dp"
         android:text="="
+        app:layout_constraintEnd_toStartOf="@+id/btn_del"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btn_0"
         app:layout_constraintTop_toBottomOf="@+id/btn_2" />
 
@@ -204,6 +232,8 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="20dp"
         android:text="DEL"
+        app:layout_constraintEnd_toStartOf="@+id/btn_div"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btn_eq"
         app:layout_constraintTop_toBottomOf="@+id/btn_3" />
 
@@ -215,6 +245,8 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="20dp"
         android:text="/"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btn_del"
         app:layout_constraintTop_toBottomOf="@+id/btn_mul" />
 
